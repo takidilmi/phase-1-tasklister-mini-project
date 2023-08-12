@@ -7,7 +7,7 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(255, 192, 252), rgb(141, 4, 141));
 }
 
 button {
@@ -34,4 +34,35 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  max-height: 200px; 
+  overflow-y: auto; /* Add scrollbars when content overflows */
+}
+
+#list:hover {
+  height: 250px; 
+}
+
+.purple-heart {
+  position: absolute;
+  font-size: 24px;
+  color: rgb(175, 15, 175);
+  pointer-events: none;
+}
+
+.red-text {
+  color: red;
+}
+
+#instructions {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#instructions p {
+  margin: 5px 0;
 }
